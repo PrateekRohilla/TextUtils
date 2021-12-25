@@ -20,10 +20,7 @@ export default function TextForm(props) {
     props.showAlert("Text Cleared !!", "success");
   };
   const handleCopy = () => {
-    //let text = document.getElementById("myBox");
-    //text.select();
     navigator.clipboard.writeText(text);
-    //document.getSelection().removeAllRanges();
     props.showAlert("Copied to clipboard !!", "success");
   };
   const handleExtraSpaces = () => {
@@ -41,7 +38,7 @@ export default function TextForm(props) {
       <div
         className="container"
         style={{
-          color: props.mode === "dark" ? "white" : "#042743",
+          color: props.mode === "dark" ? "white" : "#222831",
         }}
       >
         <h3 className="mb-3">{props.heading}</h3>
@@ -51,8 +48,9 @@ export default function TextForm(props) {
             value={text}
             onChange={handleOnChange}
             style={{
-              backgroundColor: props.mode === "dark" ? "#13466e" : "white",
-              color: props.mode === "dark" ? "white" : "#042743",
+              //backgroundColor: props.mode === "dark" ? "#13466e" : "white",
+              backgroundColor: props.mode === "dark" ? "#393E46" : "white",
+              color: props.mode === "dark" ? "white" : "#0222831",
             }}
             id="myBox"
             rows="8"
@@ -97,7 +95,7 @@ export default function TextForm(props) {
       <div
         className="container my-3"
         style={{
-          color: props.mode === "dark" ? "white" : "#042743",
+          color: props.mode === "dark" ? "white" : "#222831",
         }}
       >
         <h2>your text sumary</h2>

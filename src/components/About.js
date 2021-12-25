@@ -2,15 +2,15 @@ import React from "react";
 
 export default function About(props) {
   let myStyle = {
-    color: props.mode === "dark" ? "white" : "#042743",
-    backgroundColor: props.mode === "dark" ? "rgb(36 74 104)" : "white",
+    color: props.mode === "dark" ? "white" : "#222831",
+    backgroundColor: props.mode === "dark" ? "#393E46" : "white",
   };
 
   return (
     <div className="container">
       <h3
         className="my-3"
-        style={{ color: props.mode === "dark" ? "white" : "#042743" }}
+        style={{ color: props.mode === "dark" ? "white" : "#222831" }}
       >
         About TextUtils
       </h3>
